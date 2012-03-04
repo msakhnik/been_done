@@ -21,4 +21,20 @@
         name="menu_item_scores">View Scores</string>
     <string
         name="menu_item_help">Help</string>
+        <string
+        name="all_scores">"All Scores"</string>
+    <string
+        name="friends_scores">"Scores of Friends"</string>
+    <string
+        name="no_scores">"No scores to show."</string>
+    <string
+        name="username">"Username"</string>
+    <string
+        name="rank">"Ranking"</string>
+    <string
+        name="score">"Score"</string>
+    <string
+        name="wait_msg">"Retrieving Scores..."</string>
+    <string
+        name="wait_title">"Loading..."</string>
 </resources>

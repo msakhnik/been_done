@@ -2,11 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" android:background="@drawable/bkgrnd">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:cursorVisible="true"
+            android:text="@string/help"
+            android:textColor="@color/title_color"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon" />
+    </RelativeLayout>
 
     <TextView
+        android:id="@+id/TextView_HelpText"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/help" />
+        android:layout_height="fill_parent"
+        android:text="TextView" android:textSize="7pt" android:padding="20dp"/>
 
 </LinearLayout>
