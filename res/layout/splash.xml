@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/TextViewTopTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_logo_top" android:textSize="24pt" android:textColor="@color/logo_color"/>
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:addStatesFromChildren="false" android:alwaysDrawnWithCache="false" android:paddingBottom="5pt">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash1" 
+                android:contentDescription="@string/splash"/>
+
+            <ImageView
+                android:id="@+id/ImageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash2"
+                android:contentDescription="@string/splash"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ImageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash3"
+                android:contentDescription="@string/splash"/>
+
+            <ImageView
+                android:id="@+id/ImageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash4"
+                android:contentDescription="@string/splash"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TextViewBottomTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_logo_bottom"
+        android:textColor="@color/logo_color"
+        android:textSize="24pt"
+        android:gravity="top|center"/>
+
+    <TextView
+        android:id="@+id/TextViewBottomVersion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/version_bkgrd"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/app_version_info"
+        android:textColor="@color/version_color"
+        android:textSize="15dp"
+        android:gravity="bottom|center"/>
+
+</LinearLayout>
